@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <Componente></Componente>
+          Asi se usa con propiedades 
+        <Componente msg="Hola soy un componente"/>
       </header>
     </div>
   );
