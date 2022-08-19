@@ -10,7 +10,7 @@ import React, {Component} from "react";
     }
 }*/
 
-// Componente funcional
+// Componente funcional (basado en funciones)
 /*function Componente(props) {
     return <h2>{props.msg}</h2>;
 }*/

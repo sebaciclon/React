@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Componente from './components/Componente';
+import Propiedades from './components/Propiedades';
 
 function App() {
   return (
@@ -18,9 +19,24 @@ function App() {
         >
           Learn React
         </a>
-        <Componente></Componente>
-          Asi se usa con propiedades 
-        <Componente msg="Hola soy un componente"/>
+        <section>
+          // Asi se usa con componete basado en clases
+          <Componente></Componente>
+          // Asi se usa con componente basado en funciones 
+          <Componente msg="Hola soy un componente"/>
+          <hr/>
+          <Propiedades 
+            cadena = "Esto es una cadena de texto" 
+            numero = {77} 
+            booleano = {true}
+            arreglo = {[1, 2, 3, 4]}
+            objeto = {{nombre: "Seba", apellido: "Esains"}}
+            funcion  = {(num) => num * num}
+            elementoReact = {<i>Esto es un elemento React</i>}
+            componenteReact = {<Componente msg = "Soy un componente pasado como Props" />}
+          />
+        </section>
+        
       </header>
     </div>
   );
