@@ -3,6 +3,8 @@ import './App.css';
 import Componente from './components/Componente';
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
+import RenderizadoCondicional from './components/Renderizado';
+import RenderizadoElementos from './components/RenderizadoElementos';
 
 function App() {
   return (
@@ -21,9 +23,7 @@ function App() {
           Learn React
         </a>
         <section>
-          // Asi se usa con componete basado en clases
           <Componente></Componente>
-          // Asi se usa con componente basado en funciones 
           <Componente msg="Hola soy un componente"/>
           <hr/>
           <Propiedades 
@@ -38,6 +38,10 @@ function App() {
           />
           <hr/>
           <Estado/>
+          <hr/>
+          <RenderizadoCondicional/>
+          <hr/>
+          <RenderizadoElementos/>
         </section>
         
       </header>
