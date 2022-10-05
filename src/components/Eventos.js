@@ -4,8 +4,6 @@ import React, {Component} from "react";
 export class Eventos extends Component {
     state = {contador:0,}; 
         
-    
-
     // Arrow functions
     sumar = (e) => {
         this.setState({contador: this.state.contador + 1,});
@@ -25,6 +23,21 @@ export class Eventos extends Component {
                     <button onClick={this.sumar}>+</button>
                     <button onClick={this.restar}>-</button>
                 </nav>
+            </div>
+        );
+    }
+}
+
+export class MasSobreEventos extends Component {
+    handleClick = (e) => {
+
+    };
+
+    render() {
+        return (
+            <div>
+                <h2>Mas sobre eventos</h2>
+                <button onClick={this.handleClick}>Saludar</button>
             </div>
         );
     }
