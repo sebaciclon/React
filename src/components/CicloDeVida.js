@@ -21,6 +21,10 @@ export default class CicloDeVida extends Component {
         console.log(prevState);
     }
 
+    componentWillUnmount() {
+        console.log(3, "el componente ha sido eliminado del DOM");
+    }
+
     tictac = () => {
         this.temporizador = setInterval(() => {
             this.setState({hora: new Date().toLocaleTimeString()})

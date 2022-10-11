@@ -9,6 +9,9 @@ import {Eventos, MasSobreEventos} from './components/Eventos';
 import ComunicacionComponentes from './components/ComunicacionComponentes';
 import CicloDeVida from './components/CicloDeVida';
 
+import ContadorHooks from './components/ContadorHooks';
+import ScrollHooks from './components/ScrollHooks';
+
 function App() {
   return (
     <div className="App">
@@ -53,6 +56,11 @@ function App() {
           <ComunicacionComponentes/>
           <hr/>
           <CicloDeVida/>
+
+          <hr/>
+          <ContadorHooks/>
+          <hr/>
+          <ScrollHooks/>
         </section>
         
       </header>
