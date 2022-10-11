@@ -7,6 +7,7 @@ import RenderizadoCondicional from './components/Renderizado';
 import RenderizadoElementos from './components/RenderizadoElementos';
 import {Eventos, MasSobreEventos} from './components/Eventos';
 import ComunicacionComponentes from './components/ComunicacionComponentes';
+import CicloDeVida from './components/CicloDeVida';
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
           <MasSobreEventos/>
           <hr/>
           <ComunicacionComponentes/>
+          <hr/>
+          <CicloDeVida/>
         </section>
         
       </header>
